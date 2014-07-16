@@ -44,7 +44,7 @@ if [ "$PLATFORM" != "SunOS" ]; then
 
     cd $BUILD_TMP
 
-    tar -zxf $ZK_FILE && \
+    tar zxf $ZK_FILE && \
     cd $ZK/src/c && \
     ./configure \
         --without-syncapi \
